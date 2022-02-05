@@ -3,21 +3,82 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>find the Mammals</title>
+    <title>Toggle able sidebar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- Navigation Bar -->
-    <div class="sidenav">
-      <a href="#">section 1</a>
-      <a href="#">section 2</a>
-      <a href="#">section 3</a>
-      <a href="#">section 3</a>
+    <!-- Wrapper, main canvas-->
+    <div class="wrapper">
+      <!-- Top navBar -->
+      <div class="section">
+        <div class="top_navbar">
+          <div class="hamburguer">
+            <a href="#">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Side navBar-->
+      <div class="sidebar">
+        <!-- SomeFance stuff -->
+        <!--Menu Items-->
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-desktop"></i></span>
+              <span class="item">My Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-user-friends"></i></span>
+              <span class="item">People</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+              <span class="item">Perfomance</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-database"></i></span>
+              <span class="item">Development</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-chart-line"></i></span>
+              <span class="item">Reports</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-user-shield"></i></span>
+              <span class="item">Admin</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-cog"></i></span>
+              <span class="item">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- Main site content -->
-    <div class="main"></div>
     <script src="scripts.js"></script>
   </body>
 </html>

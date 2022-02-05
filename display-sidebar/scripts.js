@@ -1,25 +1,31 @@
+'use strict';
 /*
 Return an array containing only the mammals
 */
+const sideItems = document.querySelectorAll('.wrapper .sidebar ul li a');
+const hamburger = document.querySelector('.hamburguer');
 
-animals = [
-  {
-    type: 'Dog',
-    mammal: true,
-  },
-  {
-    type: 'Snake',
-    mammal: false,
-  },
-  {
-    type: 'Cheetah',
-    mammal: true,
-  },
-];
+console.log(sideItems);
 
-const mammals = [];
-animals.forEach((animal) => {
-  if (animal.mammal) mammals.push(animal);
+function deactiveAllItems() {
+  sideItems.forEach((item) => item.classList.remove('active'));
+}
+
+function activeItem() {
+  if (!this.classList.contains('active')) {
+    deactiveAllItems();
+    this.classList.add('active');
+  }
+}
+
+function addSideItemsListener() {
+  sideItems.forEach((item) => {
+    item.addEventListener('click', activeItem);
+  });
+}
+
+addSideItemsListener();
+
+hamburger.addEventListener('click', function () {
+  document.querySelector('body').classList.toggle('hidden');
 });
-
-console.log(mammals);
